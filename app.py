@@ -10,9 +10,9 @@ def show_todolist():
     return render_template("showtodo.html",todolist=todolist.get_all())
 
 
-@app.route("/additem", mehthods=["POST"])
+@app.route("/additem", methods=["POST"])
 def add_item():
-    title = requset.form["title"]
+    title = request.form["title"]
     if not title:
         return redirect("/")
 

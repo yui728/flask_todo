@@ -21,6 +21,7 @@ class ToDoList:
     def delete(self, item_id):
         item = [x for x in self.todolist if x.item_id == item_id]
         del item[0]
+        pass
 
 
     def update(self, item_id):

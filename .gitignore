@@ -3,3 +3,5 @@ Lib/*
 Scripts/*
 flask_todo.code-workspace
 .vscode/settings.json
+.vscode/launch.json
+__pycache__/*
