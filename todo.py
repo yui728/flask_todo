@@ -19,8 +19,10 @@ class ToDoList:
 
 
     def delete(self, item_id):
-        item = [x for x in self.todolist if x.item_id == item_id]
-        del item[0]
+        # item = [x for x in self.todolist if x.item_id == item_id]
+        # del item[0]
+        # 指定したitem_id以外の要素で書き直す
+        self.todolist  = [x for x in self.todolist if x.item_id != item_id]
         pass
 
 
