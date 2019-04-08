@@ -5,4 +5,3 @@ Scripts/*
 .vscode/settings.json
 .vscode/launch.json
 __pycache__/*
-db/*
