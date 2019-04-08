@@ -1,7 +1,8 @@
 pyvenv.cfg
 Lib/*
 Scripts/*
-flask_todo.code-workspace
+*.code-workspace
 .vscode/settings.json
 .vscode/launch.json
 __pycache__/*
+db/*
