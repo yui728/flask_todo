@@ -15,26 +15,21 @@ class ToDoItem(db.Model):
 
 
 class ToDoList:
-    # def __init__(self):
-    #     self.todolist = []
-
 
     def add(self, title):
         item = ToDoItem(title = title, done = False)
-        # self.todolist.append(item)
         db.session.add(item)
         db.session.commit()
 
 
     def delete(self, item_id):
-        item = ToDoItem.query.filter_by(item_id = item_id)
+        item = ToDoItem.query.filter_by(item_id = item_id).first()
         db.session.delete(item)
         db.session.commit()
 
 
 
     def get_all(self):
-        # return self.todolist
         items = ToDoItem.query.all()
         return items
 
